@@ -1,0 +1,11 @@
+app = "my-telegram-bot-123"
+[build]
+[http_service]
+ internal_port = 8080
+ force_https = true
+ [[http_service.ports]]
+  handlers = ["http"]
+[[vm]]
+cpu_kind = "shared"
+cpus = 1
+memory_mb = 256
